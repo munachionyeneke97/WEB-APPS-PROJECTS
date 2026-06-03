@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(275, 100%, 97%);
+  font-family: "Work Sans";
+}
+
+body p {
+  font-size: 16px;
+}
+
+body img {
+  width: 100%;
+  position: relative;
+}
+
+#card-container {
+  width: 600px;
+  height: auto;
+  background: #fff;
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+#card-container #first {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 1.5rem;
+}
+
+#card-container #first img {
+  width: 35px;
+  height: 45px;
+}
+
+#card-container #first h1 {
+  font-size: 3rem;
+  color: hsl(292, 42%, 14%);
+}
+
+.small {
+  width: 25px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.p-1 {
+  margin-top: 1rem;
+}
+
+#bar-1,
+#bar-2,
+#bar-3 {
+  border-bottom: 3px dotted hsl(275, 100%, 97%);
+  padding-bottom: 1rem;
+}
+
+#bar-1 .line-1,
+#bar-2 .line-1,
+#bar-3 .line-1,
+#bar-4 .line-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#bar-1 .line-2,
+#bar-2 .line-3 {
+  display: none;
+  margin-top: 1rem;
+  color: hsl(276, 4%, 55%);
+  line-height: 1.6;
+}
+
+#minus-1,
+#minus-2,
+#minus-3,
+#minus-4 {
+  display: none;
+}

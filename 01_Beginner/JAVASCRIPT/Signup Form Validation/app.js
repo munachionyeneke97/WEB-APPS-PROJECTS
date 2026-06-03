@@ -8,14 +8,14 @@ onButtonClick.addEventListener("click", (e) => {
   const wordFirst = document.getElementById('first-para');
 
   if(inputList.value === "") {
-    image.style.display = 'block';
+    image.style.visibility = 'visible';
     firstDiv.style.borderColor = 'hsl(0, 100%, 74%)';
-    wordFirst.style.display = 'block';
+    wordFirst.style.visibility = 'visible';
     wordFirst.style.color = 'hsl(0, 100%, 74%)';
   } else {
-    image.style.display = 'none';
+    image.style.visibility = 'hidden';
     firstDiv.style.borderColor = 'green';
-    wordFirst.style.display = 'none';
+    wordFirst.style.visibility = 'hidden';
   }
 
   const img = document.getElementById('image-2');
@@ -24,14 +24,14 @@ onButtonClick.addEventListener("click", (e) => {
   const wordSecond = document.getElementById('second-para');
 
   if(barList.value === "") {
-    img.style.display = 'block';
+    img.style.visibility = 'visible';
     secondDiv.style.borderColor = 'hsl(0, 100%, 74%)';
-    wordSecond.style.display = 'block';    
+    wordSecond.style.visibility = 'visible';    
     wordSecond.style.color = 'hsl(0, 100%, 74%)';
   } else {
-    img.style.display = 'none';
+    img.style.visibility = 'hidden';
     secondDiv.style.borderColor = 'green';
-    wordSecond.style.display = 'none';
+    wordSecond.style.visibility = 'hidden';
   }
 
   const pic = document.getElementById('image-3');
