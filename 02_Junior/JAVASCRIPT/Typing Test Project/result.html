@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test App | Results</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="result.css" />
+    <script
+      src="https://kit.fontawesome.com/6d0d529000.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="whole-container">
+      <nav id="navbar">
+        <div class="left">
+          <img src="logo-large.svg" alt="" />
+        </div>
+        <div class="right">
+          <img src="icon-personal-best.svg" alt="" />
+          <p style="color: white; font-weight: 200; font-size: 14px">
+            Personal best:
+          </p>
+        </div>
+      </nav>
+      <img src="pattern-star-2.svg" alt="" class="first-pic" />
+      <div id="display-container">
+        <img src="icon-completed.svg" alt="" />
+        <div class="text">
+          <h1>Test Completed!</h1>
+          <p class="margin-1 para">
+            Solid run. Keep pushing to beat your high score.
+          </p>
+        </div>
+        <div id="result-boxes">
+          <div class="box-1 para">
+            WPM:
+            <span
+              class="wpm"
+              style="font-weight: bold; font-size: large; color: white"
+            ></span>
+          </div>
+          <div class="box-2 para">
+            Accuracy:
+            <span
+              class="accurate-box"
+              style="
+                font-weight: bold;
+                font-size: large;
+                color: hsl(354, 63%, 57%);
+              "
+            ></span>
+          </div>
+          <div class="box-3 para">
+            Characters
+            <span
+              class="character"
+              style="font-weight: bold; font-size: large; color: white"
+            ></span>
+          </div>
+        </div>
+        <button id="home-button">
+          <p>Go Again <i class="fa-solid fa-arrow-rotate-right"></i></p>
+        </button>
+      </div>
+      <img src="pattern-star-1.svg" alt="" class="second-pic" />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

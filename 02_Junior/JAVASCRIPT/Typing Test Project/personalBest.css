@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 7%);
+  font-size: 16px;
+  overflow: hidden;
+}
+
+#whole-container {
+  margin: 1rem 3rem;
+}
+
+#whole-container .first-pic {
+  position: absolute;
+  top: 23%;
+  left: 7%;
+  width: 2%;
+}
+
+#whole-container .second-pic {
+  position: absolute;
+  bottom: 45%;
+  right: 6%;
+  width: 3%;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+#navbar .right {
+  display: flex;
+  align-items: center;
+  margin-right: 10rem;
+}
+
+#navbar .right img {
+  margin-right: 0.5rem;
+}
+
+#display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+#display-container img {
+  border: 5px blur hsl(140, 55%, 36%);
+  border-radius: 50%;
+}
+
+#display-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+#display-container .margin-1 {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#display-container #result-boxes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#display-container .box-1,
+#display-container .box-2,
+#display-container .box-3 {
+  width: 100px;
+  height: 60px;
+  border: 1px solid hsl(0, 0%, 40%);
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem;
+  text-align: left;
+  font-weight: 200;
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+}
+
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(0, 0%, 100%);
+  color: black;
+  height: 40px;
+  width: 170px;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+}
+
+#button p {
+  font-weight: bold;
+}
+
+#button img {
+  background-color: black;
+  margin-left: 0.4rem;
+}
+
+#confetti {
+  width: 100%;
+}

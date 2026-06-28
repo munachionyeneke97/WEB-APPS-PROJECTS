@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test App</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6d0d529000.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="whole-container">
+      <nav id="navbar-1">
+        <div class="left-1">
+          <img src="logo-large.svg" alt="" />
+        </div>
+        <div class="right-1">
+          <img src="icon-personal-best.svg" alt="" />
+          <p style="color: white; font-weight: 200; font-size: 14px">
+            Personal best:
+            <span
+              class="pb-box"
+              style="font-weight: bold; font-size: large"
+            ></span>
+          </p>
+        </div>
+      </nav>
+      <nav id="navbar-2">
+        <div class="left-2">
+          <div class="box-1">
+            WPM:
+            <span
+              class="wpm-box"
+              style="font-weight: bold; font-size: large"
+            ></span>
+          </div>
+          <div class="box-2">
+            Accuracy:
+            <span
+              class="accuracy-box"
+              style="font-weight: bold; font-size: large"
+            ></span>
+          </div>
+          <div class="box-3">
+            Time:
+            <span
+              class="timer-box"
+              style="font-weight: bold; font-size: large"
+            ></span>
+          </div>
+        </div>
+        <div class="right-2">
+          <div class="first-box">
+            Difficulty: <button id="easy-btn">Easy</button>
+            <button id="medium-btn">Medium</button>
+            <button id="hard-btn">Hard</button>
+          </div>
+          <div class="second-box">
+            Mode: <button id="timed-btn">Timed(60s)</button>
+            <button id="passage-btn">Passage</button>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div id="main-container">
+          <div id="text-container">
+            <div id="typing-area" tabindex="0"></div>
+          </div>
+          <div class="content">
+            <button id="button"><p>Start Typing Test</p></button>
+            <p>or click the text and start typing</p>
+          </div>
+          <button id="restart-btn">
+            Restart Test <i class="fa-solid fa-arrow-rotate-right"></i>
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
