@@ -12,6 +12,7 @@ onButtonClick.addEventListener("click", (e) => {
   firstPara.style.display = "block";
   firstPlus.style.display = "none";
   firstMinus.style.display = "block";
+  firstPara.style.transition = "all 3s ease-in-out";
 
   console.log("I dey work oo :)");
 });

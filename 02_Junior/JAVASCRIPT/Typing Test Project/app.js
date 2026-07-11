@@ -161,8 +161,6 @@ if (!currentPath.includes("result.html")) {
       easyLevel.style.cssText = "border-color: hsl(0, 0%, 15%);";
       mediumLevel.style.cssText = "border-color: hsl(0,0%,15%);";
       hardLevel.style.cssText = "border-color: hsl(0,0%,15%);";
-    } else {
-      console.log("I no dey work oo");
     }
 
     if (activeMode === true) {
@@ -218,8 +216,6 @@ if (!currentPath.includes("result.html")) {
       easyLevel.style.cssText = "border-color: hsl(0, 0%, 15%);";
       mediumLevel.style.cssText = "border-color: hsl(0,0%,15%);";
       hardLevel.style.cssText = "border-color: hsl(0,0%,15%);";
-    } else {
-      console.log("I no dey work oo");
     }
 
     if (activeMode === true) {
@@ -310,6 +306,11 @@ if (!currentPath.includes("result.html")) {
         showTime.textContent = " :-:";
 
         timeLeft--;
+
+        // timerId = setTimeout(() => {
+        //   timeLeft;
+        //   console.log(timeLeft);
+        // }, 100000000);
 
         if (timeLeft === 0) {
           clearInterval(timerId);
