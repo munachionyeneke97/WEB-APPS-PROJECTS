@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans";
+  background-color: hsl(233, 11%, 84%);
+  font-size: 18px;
+}
+
+#whole-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: url(bg-desktop-light.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+#whole-container {
+  width: 1440px;
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .logo ul {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+#header .logo ul li {
+  list-style: none;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#header .logo ul .logo-2,
+#header .logo ul .logo-3,
+#header .logo ul .logo-4 {
+  margin-left: 0.6rem;
+}
+
+#header .theme-change .sun-img {
+  display: none;
+  cursor: pointer;
+}
+
+#header .theme-change .moon-img {
+  display: block;
+  cursor: pointer;
+}
+
+#input-task {
+  background-color: hsl(0, 0%, 98%);
+  width: 700px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 7px;
+}
+
+.radio-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid hsl(233, 11%, 84%);
+}
+
+.round {
+  display: block;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.fa-2xs {
+  display: none;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.round:hover {
+  border: 2px solid linear-gradient(#57ddff, #c058f3);
+  cursor: pointer;
+}
+
+#input-task input {
+  all: unset;
+  margin-left: 1rem;
+  height: 30px;
+  width: 100%;
+}
+
+#tasks-content {
+  background-color: hsl(0, 0%, 98%);
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem 1rem;
+  border-radius: 7px;
+  margin-top: 1rem;
+}
+
+#tasks-content .tasklist-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid hsl(233, 11%, 84%);
+  cursor: pointer;
+}
+
+.task-text {
+  display: flex;
+  align-items: center;
+}
+
+.task p {
+  margin-left: 1rem;
+}
+
+.task .remove-task {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.task:hover .remove-task {
+  opacity: 1;
+}
+
+#tasks-content .tasklist-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(236, 9%, 61%);
+}
+
+#tasks-content .tasklist-foot .all-btn,
+#tasks-content .tasklist-foot .active-btn,
+#tasks-content .tasklist-foot .completed-btn {
+  cursor: pointer;
+}
+
+#tasks-content .tasklist-foot .all-btn {
+  color: hsl(220, 98%, 61%);
+}
+
+#tasks-content .tasklist-foot .all-btn:hover,
+#tasks-content .tasklist-foot .active-btn:hover,
+#tasks-content .tasklist-foot .completed-btn:hover {
+  color: hsl(235, 19%, 35%);
+}
+
+#tasks-content .tasklist-foot .tasks-no {
+  margin-bottom: 0.5rem;
+}
+
+#tasks-content .tasklist-foot .change-levels ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#tasks-content .tasklist-foot .change-levels ul li {
+  list-style: none;
+  margin-left: 0.8rem;
+  font-weight: bold;
+}
+
+#tasks-content .tasklist-foot .clear-btn p {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+#tasks-content .tasklist-foot .clear-btn p:hover {
+  color: hsl(235, 19%, 35%);
+}
+
+.checked {
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.dash {
+  text-decoration: line-through;
+  color: hsl(233, 11%, 84%);
+}
+
+.block {
+  display: flex;
+}
+
+.block-2 {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.dark-mode {
+  background-color: hsl(235, 21%, 11%);
+}
+
+.dark-mode #whole-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: url(bg-desktop-dark.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.dark-mode #input-task {
+  background-color: hsl(235, 24%, 19%);
+}
+
+.dark-mode #tasks-content {
+  background-color: hsl(235, 24%, 19%);
+}
+
+.dark-mode .dash {
+  text-decoration: line-through;
+  color: hsl(235, 16%, 43%);
+}
+
+.dark-mode #tasks-content .tasklist-foot {
+  color: hsl(235, 16%, 43%);
+}
+
+.dark-mode .radio-circle {
+  border: 2px solid hsl(237, 14%, 26%);
+}
+
+.dark-mode .task {
+  border-bottom: 1px solid hsl(233, 14%, 35%);
+  color: hsl(234, 39%, 85%);
+}
+
+.dark-mode #input-task input {
+  all: unset;
+  margin-left: 1rem;
+  height: 30px;
+  width: 100%;
+  color: hsl(234, 39%, 85%);
+}
+
+.dark-mode #header .theme-change .moon-img {
+  display: none;
+}
+
+.dark-mode #header .theme-change .sun-img {
+  display: block;
+  cursor: pointer;
+}
+
+.dark-mode .fa-2xs {
+  display: none;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.dark-mode .block-2 {
+  display: block;
+}
+
+.dark-mode #tasks-content .tasklist-foot .all-btn:hover,
+.dark-mode #tasks-content .tasklist-foot .active-btn:hover,
+.dark-mode #tasks-content .tasklist-foot .completed-btn:hover {
+  color: hsl(236, 33%, 92%);
+}
+
+.dark-mode #tasks-content .tasklist-foot .clear-btn p:hover {
+  color: hsl(236, 33%, 92%);
+}

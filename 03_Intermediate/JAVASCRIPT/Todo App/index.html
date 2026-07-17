@@ -9,8 +9,52 @@
       @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
     </style>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6d0d529000.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <div id="whole-container">
+      <div id="header">
+        <div class="logo">
+          <ul>
+            <li class="logo-1">T</li>
+            <li class="logo-2">O</li>
+            <li class="logo-3">D</li>
+            <li class="logo-4">O</li>
+          </ul>
+        </div>
+        <div class="theme-change">
+          <img src="icon-sun.svg" alt="" class="sun-img" />
+          <img src="icon-moon.svg" alt="" class="moon-img" />
+        </div>
+      </div>
+      <div id="input-task">
+        <span class="radio-circle"></span>
+        <input
+          type="text"
+          placeholder="Create a new todo..."
+          class="input-bar"
+        />
+      </div>
+      <div id="tasks-content">
+        <div class="tasklist-top"></div>
+        <div class="tasklist-foot">
+          <p class="tasks-no"></p>
+          <div class="change-levels">
+            <ul>
+              <li class="all-btn">All</li>
+              <li class="active-btn">Active</li>
+              <li class="completed-btn">Completed</li>
+            </ul>
+          </div>
+          <div class="clear-btn">
+            <p>Clear Completed</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
